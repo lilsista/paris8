@@ -1,0 +1,64 @@
+.content-slider{
+	width:1200px;
+	height:400px;
+	margin : 150px auto;
+	position : relative;
+}
+.slider{
+	width: 1050px;
+	height: 400px;
+	border: 1px solid #ddd;
+	padding: 0;
+	position: relative;
+	margin : 10px auto;
+	overflow: hidden;
+}
+
+#slider-list{
+	list-style-type: none;
+	display: flex;
+	margin : 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0;
+	/*animation:slide 15s linear infinite;*/
+}
+#slider-list figure{
+	width :200px;
+	height :380px;
+	margin : 5px;
+	padding : 0;
+	border : 1px dashed #ccc;
+	text-align: center;
+}
+
+#slider-list img{
+	width: 200px;
+	/*height: 150px;*/
+	
+}
+
+.arrow{
+	position: absolute;
+	top:25vh;
+	text-decoration: none;
+	color: black;
+}
+
+.next{
+	right: 0;
+	
+}
+.prev{
+	left: 0;
+}
+@keyframes slide{
+0%{left:0px;}
+10%{left:0px;}
+20%{left:-40%;}
+30%{left:-40%;}
+40%{left:-80%;}
+50%{left:-80%;}
+90%{left: 0;}
+}
