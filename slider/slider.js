@@ -16,7 +16,6 @@ $(document).ready(function(){
 	$('.prev-slide').click(prev);
 		
 	var autoplay = setInterval(next,4000);
-
 	/*$('.next-slide,.prev-slide').hover(function(){
 		clearInterval(autoplay);
 	});*/
@@ -30,20 +29,17 @@ $(document).ready(function(){
 		}
 
 			$('.dots .cercle').removeClass('active');
-			$('.slide-image').animate({left : -counter*widthFigure },2000,function(){
+			$('.slide-image').animate({left : -widthFigure },2000,function(){
 				$('.cercle:nth-child('+(counter+1)+')').addClass('active');
+				$(this).css("left",0).find('figure').last().after($(this).find('figure').first());
 
 			});
-		
-		
-		
-		console.log(counter);
 		
 	}
 
 	function prev(){
 		if(counter <= 0){
-			counter = slideCount-1;
+			counter = 0;
 		}else{
 			counter = counter - 1;
 		}
@@ -51,8 +47,9 @@ $(document).ready(function(){
 		$('.dots .cercle').removeClass('active');
 		$('.slide-image').animate({left : -counter*widthFigure },2000,function(){
 			$('.cercle:nth-child('+(counter+1)+')').addClass('active');
-		});
-		console.log(counter);
+/*			$(this).css("left",0).find('figure').first().before($(this).find('figure').last());
+*/		});
+		
 	}
 
 	 function pagination(){

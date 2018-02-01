@@ -3,50 +3,166 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TEST SLIDER</title>
-
-	 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
 	<link rel="stylesheet" type="text/css" href="slider.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<link rel="stylesheet" type="text/css" href="animation.css">
+	<link rel="stylesheet" type="text/css" href="navigation.css">
+
 </head>
 <body>
-<div class="slideShow">
-	<div class="slide-image">
-		<figure>
-			<img src="../img/image1.jpg" alt="">
-			<figcaption><p>Légende 1</p></figcation>
-		</figure>
-		<figure>
-			<img src="../img/image1.jpg" alt="">
-			<figcaption><p>Légende 2</p></figcation>
-		</figure>
-		<figure>
-			<img src="../img/image1.jpg" alt="">
-			<figcaption><p>Légende 3</p></figcation>
-		</figure>
-		<figure>
-			<img src="../img/image1.jpg" alt="">
-			<figcaption><p>Légende 4</p></figcation>
-		</figure>
-		<figure>
-			<img src="../img/image1.jpg" alt="">
-			<figcaption><p>Légende 5</p></figcation>
-		</figure>
-			
-	</div>
-	<span  class="arrow prev-slide"></span>
-	<span  class="arrow next-slide"></span>
-	<div class="dots">
+	<nav class="menu-principal">
+		<ul>
+			<li><a href="../index.html">slider multiple</a></li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+			<li>item6</li>
+		</ul>
+	</nav>
+	<div class="contain">
+		<div class="conteneur-block" id="conteneur-block">
+			<div class="contain-figure">
+				<figure>
+					<img src="../img/image1.jpg" alt="">
+					<figcaption class="containt-text">
+						<p>item1</p>
+						<p>item2</p>
+						<p>item3</p>
+						<p>item4</p>
+						<p>item5</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="contain-figure">
+				<figure>
+					<img src="../img/image1.jpg" alt="">
+					<figcaption class="containt-text">
+						<p>item1</p>
+						<p>item2</p>
+						<p>item3</p>
+						<p>item4</p>
+						<p>item5</p>
+						<p>item1</p>
+						<p>item2</p>
+						<p>item3</p>
+						<p>item4</p>
+						<p>item5</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="contain-figure">
+				<figure>
+					<img src="../img/image1.jpg" alt="">
+					<figcaption class="containt-text">
+						<p>item1</p>
+						<p>item2</p>
+						<p>item3</p>
+						<p>item4</p>
+						<p>item5</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="contain-figure">
+				<figure>
+					<img src="../img/image1.jpg" alt="">
+					<figcaption class="containt-text">
+						<p>item1</p>
+						<p>item2</p>
+						<p>item3</p>
+						<p>item4</p>
+						<p>item5</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="contain-figure">
+				<figure>
+					<img src="../img/image1.jpg" alt="">
+					<figcaption class="containt-text">
+						<p>item1</p>
+						<p>item2</p>
+						<p>item3</p>
+						<p>item4</p>
+						<p>item5</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="contain-figure">
+				<figure>
+					<img src="../img/image1.jpg" alt="">
+					<figcaption class="containt-text">
+						<p>item1</p>
+						<p>item2</p>
+						<p>item3</p>
+						<p>item4</p>
+						<p>item5</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
 		
-	</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<div class="slideShow" id="slideShow">
+			<div class="slide-image">
+				<figure>
+					<img src="../img/image1.jpg" alt="">
+					<figcaption><p>Légende 1</p></figcaption>
+				</figure>
+				<figure>
+					<img src="../img/nature-q-c-600-400-7.jpg" alt="">
+					<figcaption><p>Légende 2</p></figcaption>
+				</figure>
+				<figure>
+					<img src="../img/image1.jpg" alt="">
+					<figcaption><p>Légende 3</p></figcaption>
+				</figure>
+				<figure>
+					<img src="../img/nature-q-c-640-480-2.jpg" alt="">
+					<figcaption><p>Légende 4</p></figcaption>
+				</figure>
+				<figure>
+					<img src="../img/image1.jpg" alt="">
+					<figcaption><p>Légende 5</p></figcaption>
+				</figure>
+				<figure>
+					<img src="../img/image2.jpg" alt="">
+					<figcaption><p>Légende 6</p></figcaption>
+				</figure>		
+			</div>
+			<span  class="arrow prev-slide"></span>
+			<span  class="arrow next-slide"></span>
+			<div class="dots">
+			</div>
+		</div>
+
+		<div class="contient-animation" id="contient-animation">
+			<button id="anime">Commencer l'animation</button>
+			<div id="DroiteGauche">Animation</div>
+		</div>
+		<div class="contient-navigation">
+			<ul>
+				<li><a href="#conteneur-block">Galerie</a></li>
+				<li><a href="#slideShow">Slider</a></li>
+				<li><a href="#contient-animation">Animation</a></li>
+			</ul>
+		</div>
+	</div>	
+	<footer>
+		<p>footer</p>
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/2de590df29.js"></script>-->
 	<script src="slider.js"></script>
+	<script src="menu.js"></script>
+	<script src="amination.js"></script>
+	<script src="navigation.js"></script>
 </body>
 </html>
 

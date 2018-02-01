@@ -1,0 +1,19 @@
+.contient-animation{
+	width : 800px;
+	border : 1px solid #ccc;
+	margin : 30px auto;
+	height: 400px;
+}
+
+#DroiteGauche{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	text-align: center;
+	line-height: 100px;
+	color: white;
+}
+
+#anime{
+	margin-bottom: 30px;
+}
