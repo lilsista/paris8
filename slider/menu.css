@@ -19,8 +19,9 @@ a{
 }
 .contain-figure figcaption{
 	text-align: center;
-	display : none;
-}
+ 	display : none;
+ }
+.rester{display : block!important;}
 .contain-figure img{
 	width: 200px;
 	height: auto;

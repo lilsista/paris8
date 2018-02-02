@@ -10,6 +10,7 @@ body{
 	width: 90%;
 	height : 500px;
 	margin : 0 auto;
+	position : relative;
 
 
 }
@@ -48,10 +49,17 @@ body{
 	text-align: center;
 }
 
+
 .next-slider:before{
 	content: url('../slider/img/next.png');
+	position:absolute;
+	top : 50%;
+	right : 0;
 }
 .prev-slider:before{
 	content: url('../slider/img/prev.png');
+	position:absolute;
+	top : 50%;
+	left : 0;
 }
 

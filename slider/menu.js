@@ -1,25 +1,9 @@
 $(document).ready(function(){
 
-	
-
-	$('.contain-figure').click(function(){
-		//$('.containt-text').hide("slow");
-		$(this).find('figcaption').slideToggle("slow");
-	})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$('.contain-figure').click(function(){
+	$(this).find('figcaption').toggleClass('rester');
+	$(this).siblings().find('figcaption').removeClass('rester');
+})
 
 
 })
