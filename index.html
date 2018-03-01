@@ -8,10 +8,98 @@
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/sliderbis.css">
+	<link rel="stylesheet" type="text/css" href="css/slider3d.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
 </head>
 <body>
 	<a href="slider/slider.html">slider 1 image</a>
- <div class="content-slider">
+
+	<div id="container-menu">
+		<ul id="menu">
+	        <li tabindex="0">
+	        	Menu 1
+	                <ul>
+	                        <li>CSS</li>
+	                        <li>Graphic design</li>
+	                        <li>Development tools</li>
+	                        <li>Web design</li>
+	                </ul>
+	        </li>
+	        <li tabindex="0">
+	        	Menu2	
+	        	<ul>
+	        		<li>CSS</li>
+	                <li>Graphic design</li>
+	        	</ul>
+	        </li>         
+		</ul>
+	</div>
+
+
+	<div id="slider3d">
+		<div class="containe">
+			<div id="carousel3d">
+				<figure>
+					<img src="img/image1.jpg" height="400" width="600" alt="image1">
+					<figcaption>
+						<p>legend 1</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/image2.jpg" height="266" width="400" alt="image2">
+					<figcaption>
+						<p>legend 2</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/nature-q-c-600-400-7.jpg" height="400" width="600" alt="image3">
+					<figcaption>
+						<p>legend 3</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/nature-q-c-640-480-2.jpg" height="480" width="640" alt="image4">
+					<figcaption>
+						<h1>legend 4</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem assumenda cupiditate, reprehenderit optio earum tenetur dolore voluptate, dolor possimus aut, labore repudiandae. Est voluptatibus, hic itaque asperiores ullam, recusandae.</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/image1.jpg" height="400" width="600" alt="image5">
+					<figcaption>
+						<p>legend 5</p>
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="img/image2.jpg" height="266" width="400" alt="image6">
+					<figcaption>
+						<p>legend 6</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<p>
+		    <label for="panel-count">panels</label>
+		    <input type="range" id="panel-count" value="4" min="3" max="6" />
+		    <span class="result"></span>
+    	</p>
+		<div class="next3d">Next</div>
+		<div class="prev3d">Prev</div>	
+	</div> 
+    
+
+    <div id="animation">
+		<figure>
+			<img src="img/image1.jpg" height="400" width="600" alt="image1" title="image1">
+			<figcaption>
+				<h2>titre 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</figcaption>
+		</figure>
+    </div>	
+
+ 	<div class="content-slider">
 		<div class="slider">
 			<ul id="slider-list">
 				<li>
@@ -232,6 +320,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
 	<script src="https://use.fontawesome.com/2de590df29.js"></script>
+	<script src="js/utils.js"></script>
 	<script src="js/carousel.js"></script>
 	<script src="js/sliderbis.js"></script>
 </body>

@@ -1,0 +1,125 @@
+.menu-principal ul{
+	list-style-type: none;
+	display: flex;
+	justify-content : space-between;
+	background : #1284E4;
+	padding : 0;
+	margin :0;
+	height : 100px;
+
+}
+.menu-principal li{
+	padding : 20px;
+	width : 100px;
+	text-align: center;
+}
+
+.menu-principal li:hover{
+	background : #2C0CE4;
+}
+
+footer{
+	height: 100px;
+	background : #1284E4;
+	text-align: center;
+	margin : 0;
+	clear : both;
+}
+
+.main{
+	width : 100%;
+	min-height: 70vh;
+}
+
+.position{
+	width : 50%;
+	height : 400px;
+	background : #ccc;
+	clear: right;
+}
+
+.position-grand{
+	height: 800px;
+}
+
+/* .section:nth-child(2n) .position{
+	float: right;
+} */
+
+.section:nth-child(even) .position{
+	float : right;
+}
+
+.contient-navigation{
+	width : 200px;
+	position: absolute;
+	top : 110px;
+	right: 10px;
+}
+.contient-navigation ul{
+	list-style-type: none;
+	text-align: center;
+	padding: 10px 0;
+	margin:  0;
+	background: #0a3168;
+	border-radius : 10px;
+
+
+}
+
+.contient-navigation li{
+	margin : 5px;
+	background :#72b2bb;
+	padding : 10px;
+	border: 1px solid #000;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+
+}
+
+
+.retourne,.info{
+	float : left;
+	margin-left: 20px;
+	.orange{
+		position : relative;
+		width : 300px;
+		margin : 0;
+		&:hover{
+			cursor : pointer;
+		}
+		figcaption{
+			position : absolute;
+			bottom: 0;
+			left : 0;
+			background : rgb(255,150,0);
+			width : 100%;
+			text-align: center;
+			p{
+				margin : 0;
+				padding : 5px;
+			}
+		}
+		
+	}
+	.dos{
+		width : 300px;
+		min-height : 250px;
+		background : rgba(255,150,0,0.5);
+		display : none;
+		position : absolute;
+		top : 0;
+		left :0;
+		ul{
+			color : #fff;
+			display : flex;
+			height : 200px;
+			flex-direction : column;
+			justify-content : space-around;
+			
+		}
+	}
+
+}
+
+

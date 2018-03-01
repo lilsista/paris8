@@ -56,3 +56,41 @@
 	left: 0;
 }
 
+
+#container-menu{
+	width : 100%;
+	
+}
+
+#menu,ul{
+	list-style-type: none;
+	padding : 0;
+}
+
+#menu > li{
+	background : #000;
+	color :#fff;
+	display : inline-block;
+	margin : 0 1em;
+	position : relative;
+
+}
+
+#menu > li:hover{
+	cursor : pointer;
+}
+
+#menu li ul{
+	padding : 0;
+	background :#ccc;
+	color : #000;
+	position : absolute;
+	left : -9000px;
+}
+
+#menu li:focus ul, #menu li:active ul {/* opened*/
+  left:0;
+  right:0;
+}
+
+
