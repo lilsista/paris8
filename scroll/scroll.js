@@ -59,6 +59,8 @@ $(document).ready(function(){
 					navigation.css({position : "fixed",top : 10+"px"});
 				}
 			}
+
+
 			/*if( (scroll) < (palierPaire[i]+container) && (scroll) > (palierImpaire[i]+container)){
 				navigation.css({left : 0});
 			}*/

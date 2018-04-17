@@ -10,11 +10,12 @@
 	<link rel="stylesheet" type="text/css" href="css/sliderbis.css">
 	<link rel="stylesheet" type="text/css" href="css/slider3d.css">
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<link rel="stylesheet" type="text/css" href="css/flex.css">
 </head>
 <body>
 	<a href="slider/slider.html">slider 1 image</a>
 
-	<div id="container-menu">
+	<div id="container-menu" style="display:none;">
 		<ul id="menu">
 	        <li tabindex="0">
 	        	Menu 1
@@ -36,7 +37,7 @@
 	</div>
 
 
-	<div id="slider3d">
+	<div id="slider3d" style="display:none;">
 		<div class="containe">
 			<div id="carousel3d">
 				<figure>
@@ -89,7 +90,7 @@
 	</div> 
     
 
-    <div id="animation">
+    <div id="animation" style="display:none;">
 		<figure>
 			<img src="img/image1.jpg" height="400" width="600" alt="image1" title="image1">
 			<figcaption>
@@ -99,7 +100,7 @@
 		</figure>
     </div>	
 
- 	<div class="content-slider">
+ 	<div class="content-slider" style="display:none;">
 		<div class="slider">
 			<ul id="slider-list">
 				<li>
@@ -192,7 +193,7 @@
 		<a href="#" class="arrow next"><i class="fa fa-chevron-right fa-3x" aria-hidden="true"></i></a>
 	</div>
 
-	<div class="container">
+	<div class="container" style="display:none;">
 		<div class ="row">
 			<div class="content-slideMultiple">
 				<div class="sliderMultiple">
@@ -311,6 +312,19 @@
 		</div>
 	</div>
 
+	<div id="block-containt">
+		<div class="block" style="height : 100px;">1</div>
+		<div class="block" style="height : 300px;">2</div>
+		<div class="block" style="height : 600px;">3</div>
+		<div class="block" style="height : 300px;">4</div>
+		<div class="block" style="height : 200px;">5</div>
+		<div class="block" style="height : 100px;">6</div>
+		<div class="block" style="height : 100px;">7</div>
+		<div class="block" style="height : 600px;">8</div>
+		<div class="block" style="height : 300px;">9</div>
+		<div class="block" style="height : 500px;;">10</div>
+		
+	</div>
 
 
 	
@@ -323,5 +337,6 @@
 	<script src="js/utils.js"></script>
 	<script src="js/carousel.js"></script>
 	<script src="js/sliderbis.js"></script>
+	<script type="text/javascript" src="js/flex.js"></script>
 </body>
 </html>
