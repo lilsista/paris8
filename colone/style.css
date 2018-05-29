@@ -1,0 +1,93 @@
+.flippingcard{
+	position : relative;
+	display : inline-block;
+	height : 50%;
+	
+}
+
+.premier div[class^="card"]{
+	height:100%;
+	width: 100%;
+	perspective-origin : center bottom;
+	position : relative;
+}
+
+div[class^="card"]{
+	height:300px;
+	width: 200px;
+	perspective-origin : center bottom;
+	position : relative;
+}
+
+
+div[class^="card"] [class^="face"]{
+	height: 100%;
+	width : 100%;
+	position : absolute;
+	left : 0;
+	top : 0;
+	backface-visibility : hidden;
+	transform-style : preserve-3d;
+	transition-duration : 0.5s;
+	transition-property : transform;
+	transition-timing-function : ease-out;
+}
+
+div[class^="card"] .face-front{
+	background-color: darkred;
+	z-index: 5;
+}
+
+div[class^="card"] .face-back{
+	background-color: darkblue;
+	z-index: 0;
+	transform:rotateY(-180deg);
+}
+
+div[class^="card"].rotated .face-front{
+	z-index: 5;
+	transform : rotateY(180deg);
+}
+
+div[class^="card"].rotated .face-back{
+	z-index: 10;
+	transform : rotateY(0deg);
+}
+
+button{
+	background-color: darkblue;
+	padding : 10px;
+	width : 100%;
+	color : #fff;
+	border : none;
+	margin-top: 5px;
+	cursor : pointer;
+}
+
+figcaption{
+	position : absolute;
+	bottom : 0;
+	width : 100%;
+	background-color: rgba(0,0,0,0.5);
+	color : #fff;
+	padding : 10px;
+}
+
+img{
+	width : 100%;
+	height : 100%;
+	object-fit : cover;
+}
+
+.tout{
+	width : 70%;
+	height : 500px;
+	margin : 0 auto;
+}
+
+.premier{
+	display : flex;
+	flex-direction : column;
+	width : 50%;
+	height : 100%;
+}

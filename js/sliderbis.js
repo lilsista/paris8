@@ -10,7 +10,7 @@ $(document).ready(function(){
 	var radius = Math.round( (figures.width()/2) / Math.tan( Math.PI/ panelCount ));
 	var theta = 360/panelCount;
 
-	console.log(panel.val());
+	/*console.log(panel.val());*/
 
 //initialisation
 

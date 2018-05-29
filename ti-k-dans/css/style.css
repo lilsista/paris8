@@ -1,0 +1,9 @@
+.container-fluid{
+	padding: 0;
+	display: flex;
+	flex-direction : column;
+	justify-content : space-between;
+}
+.container{
+	min-height: 700px;
+}
