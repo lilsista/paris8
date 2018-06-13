@@ -1,93 +1,47 @@
-.flippingcard{
+body{
 	position : relative;
-	display : inline-block;
-	height : 50%;
-	
-}
+	margin : 0;
+	height : 100vh;
 
-.premier div[class^="card"]{
-	height:100%;
-	width: 100%;
-	perspective-origin : center bottom;
-	position : relative;
 }
-
-div[class^="card"]{
-	height:300px;
+.miniature{
 	width: 200px;
-	perspective-origin : center bottom;
-	position : relative;
+	padding : 20px;
 }
-
-
-div[class^="card"] [class^="face"]{
-	height: 100%;
+.miniature img{
 	width : 100%;
-	position : absolute;
-	left : 0;
-	top : 0;
-	backface-visibility : hidden;
-	transform-style : preserve-3d;
-	transition-duration : 0.5s;
-	transition-property : transform;
-	transition-timing-function : ease-out;
+	height: auto;
 }
-
-div[class^="card"] .face-front{
-	background-color: darkred;
-	z-index: 5;
-}
-
-div[class^="card"] .face-back{
-	background-color: darkblue;
-	z-index: 0;
-	transform:rotateY(-180deg);
-}
-
-div[class^="card"].rotated .face-front{
-	z-index: 5;
-	transform : rotateY(180deg);
-}
-
-div[class^="card"].rotated .face-back{
-	z-index: 10;
-	transform : rotateY(0deg);
-}
-
-button{
-	background-color: darkblue;
-	padding : 10px;
-	width : 100%;
-	color : #fff;
-	border : none;
-	margin-top: 5px;
+.miniature:hover{
 	cursor : pointer;
 }
 
-figcaption{
+.img-normal{
+	 display : none;  
 	position : absolute;
-	bottom : 0;
-	width : 100%;
-	background-color: rgba(0,0,0,0.5);
+	top : 0;
+	left : 0;
+	width : 100vw;
+	height : 100vh;
+	background: rgba(0,0,0,0.9);
+	text-align: center;
+}
+
+.img-normal img{
+	margin : calc( 50vh - 400px / 2) auto;
+	border : 10px solid #fff;
+	border-radius : 5px;
+}
+
+.croix{
+	position: absolute;
+	top: 10%;
+	right: 30%;
 	color : #fff;
-	padding : 10px;
+	font-size: x-large;
 }
 
-img{
-	width : 100%;
-	height : 100%;
-	object-fit : cover;
-}
-
-.tout{
-	width : 70%;
-	height : 500px;
-	margin : 0 auto;
-}
-
-.premier{
-	display : flex;
-	flex-direction : column;
-	width : 50%;
-	height : 100%;
+.croix:hover{
+	text-decoration: none;
+	color : #fff;
 }

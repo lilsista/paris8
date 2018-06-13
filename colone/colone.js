@@ -1,18 +1,18 @@
-function tournerLaCarte() {
-    var elements = this.parentNode.querySelectorAll("div[class^='card']");
-    for (var i = 0; i < elements.length; i++) {
-        if (elements[i].className == "card-single") {
-            elements[i].className += " rotated";
-        } else {
-            elements[i].className = "card-single";
-        }
-    }
-}
+$(document).ready(function(){
 
-window.onload = function () {
-    buttons = document.querySelectorAll("div[class^='card']");
-    for (i = 0; i < buttons.length; i++) {
-        element = buttons[i];
-        element.addEventListener("mouseenter", tournerLaCarte);
-    }
-};
+    var miniature = $('.miniature');
+    var normal = $('.img-normal');
+    var fermer = $('.croix');
+
+    miniature.click(function(){
+       /* normal.css({display : "block"});*/
+        normal.effect("slide","slow");
+    });
+
+    fermer.click(function(){
+       /* normal.css({display : "none"});*/
+       normal.effect("drop","slow");
+    });
+
+
+});
