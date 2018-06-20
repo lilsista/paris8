@@ -96,7 +96,7 @@ p{
 }
 
 .list-group-item.active{
-	background : lightblue!important;
+	background : linear-gradient(to left right, lightblue 10% ,#fff 90%)!important;
 	color :#000!important;
 	border  : 1px solid rgba(0,0,0,.125);
 }

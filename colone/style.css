@@ -1,4 +1,4 @@
-body{
+/* body{
 	position : relative;
 	margin : 0;
 	height : 100vh;
@@ -44,4 +44,14 @@ body{
 .croix:hover{
 	text-decoration: none;
 	color : #fff;
+} */
+
+nav{
+	width : 15%;
+	margin : 50px auto;
+	background : #ccc;
+}
+
+.sous-menu{
+	display : none;
 }
